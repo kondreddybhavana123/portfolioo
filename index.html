@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing:border-box;
+            padding:0px;
+            margin:0px;
+            text-decoration:none;
+         }
+         :root{
+           --text-color:#fff;
+           --first-bg-color:#191f36;
+           --second-bg-color:#262b40;
+           --btn-color:#59b2f4;
+         }
+         .header{
+            display:flex;
+            justify-content:space-between;
+            width:100%;
+            background-color:var(--first-bg-color);
+            padding:1rem 9%;
+            border:2px solid white;
+            position:fixed;
+        }
+        .header a{
+            color:var(--text-color);
+        }
+        .navbar{
+            display:flex;
+            justify-content:space-around;
+            width:45%;
+        }
+        .logo{
+            font-weight:700;
+            font-size: 1.6rem;
+        }
+        .navbar a{
+            font-weight:800;
+            font-size:1rem;
+        }
+        .home{
+            display:flex;
+            justify-content:space-around ;
+            min-height:100vh;
+            padding:8rem 10% 4rem;
+            background-color:var(--second-bg-color);
+            color:var(--text-color);
+        }
+        .home-img img{
+            width:20vw;
+            height:45vh;
+            border-radius:50%;
+            animation:floatimage 2s ease-in-out 2s infinite;
+        }
+        @keyframes floatimage{
+            0%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-1rem);
+            }
+            100%{
+                transform:translateY(0);
+            }
+        }
+        .home-content h2{
+            font-size:2.2rem;
+            font-weight:800;
+        }
+        .home-content h2 span{
+            color:var(--btn-color);
+        }
+        .home-content p{
+            font-weight:500;
+            margin-bottom:1.5rem;
+        }
+        .social{
+            display:flex;
+            gap:2rem;
+        }
+        .social a{
+            border:0.2rem solid var(--btn-color);
+            border-radius:50%;
+            padding:0.6rem;
+            color:var(--btn-color);
+            height:2.5rem;
+            margin-bottom:2rem;
+        }
+        .social a:hover{
+            background-color:var(--btn-color);
+            color:var(--second-bg-color);
+            box-shadow:0 0 1rem var(--btn-color);       
+        }
+        .btn{
+            background-color:var(--btn-color);
+            padding:0.7rem 2rem;
+            border-radius:4rem;
+            box-shadow:0 0 1rem var(--btn-color);
+            font-weight:600;
+
+        }
+        .btn:hover{
+            box-shadow:none;
+        }
+    
+     </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">My skills</a>
+            <a href="contacts.html">Contacts</a>
+
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h2>Hi! myself</h2>
+            <h1>Kondreddy Bhavana</h1>
+            <h2> And <span>i am a frontend developer</span></h2>
+            <p>I am MCA graduate (2025) with a strong foundation in programming and web development.
+                     I have skills in Python, HTML, CSS, and SQL, which help me build efficient and user-friendly
+                      applications. </p>
+             <div class="social">
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+             </div>
+             <a href="" class="btn">download Cv</a>
+         </div>
+         <div class="home-img">
+            <img src="image3.jpeg">
+        </div>
+     </section>
+    
+</body>
+</html>

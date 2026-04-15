@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vV
+    X0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+        }
+
+        :root{
+            --text-color:#fff;
+            --first-bg-color:#191f36;
+            --second-bg-color:#262b40;
+            --btn-color:#59b2f4;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            min-width:100vw;
+            background-color: var(--first-bg-color);
+            padding:1rem 9%;
+            border:2px solid white;
+            position: fixed;
+        }
+
+        .header a{
+            color: var(--text-color);
+        }
+
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            width:45%;
+        }
+
+        .logo{
+            font-weight:700;
+            font-size:1.6rem;
+        }
+
+        .navbar a{
+            font-weight:800;
+            font-size:1rem;
+        }
+
+        .services{
+            padding-top:8rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            min-height:100vh;
+            background-color:var(--first-bg-color);
+            color:var(--text-color);
+        }
+
+        .heading{
+            font-size:2.5rem;
+            font-weight:800;
+            text-align:center;
+            margin-bottom:3rem;
+        }
+
+        .heading span{
+            color:var(--btn-color);
+        }
+
+        .services-content{
+            display:flex;
+            width:80%;
+            gap:5rem;
+            justify-content:center;
+        }
+
+        .services-items{
+            background-color:var(--second-bg-color);
+            padding:2rem;
+            text-align:center;
+            border-radius:1rem;
+            transition:0.4s ease;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .services-items:hover{
+            outline:2px solid var(--btn-color);
+            transform:translateY(-10px);
+        }
+
+        .services-items i{
+            font-size:3rem;
+            color:var(--btn-color);
+            margin-bottom:1rem;
+        }
+
+        .services-items h2{
+            font-size:1.4rem;
+            font-weight:700;
+            margin-bottom:1rem;
+        }
+
+        .services-items p{
+            flex-grow:1;
+            margin-bottom:2rem;
+            line-height:1.5rem;
+        }
+
+        .btn{
+            background-color:var(--btn-color);
+            padding:0.6rem 1.5rem;
+            border-radius:1.5rem;
+            font-weight:600;
+            text-align:center;
+            color:var(--text-color);
+        }
+
+        .btn:hover{
+            box-shadow:0 0 15px var(--btn-color);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+</header>
+
+<section class="services">
+    <h1 class="heading">My <span>Services</span></h1>
+
+    <div class="services-content">
+
+        <div class="services-items">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab est, illum explicabo nostrum ratione quis iusto voluptatem non et laudantium assumenda corporis qui veritatis nobis sunt rerum eligendi voluptate?</p>
+            <a href="#" class="btn">Readmore</a>
+        </div>
+
+        <div class="services-items">
+            <i class="fa-solid fa-database"></i>
+            <h2>Database development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam eligendi fuga ducimus non, velit illum eius magnam, vero quisquam assumenda. Dolor cumque numquam eligendi nesciunt? Dolorem nesciunt facere odit!</p>
+            <a href="#" class="btn">Readmore</a>
+        </div>
+
+        <div class="services-items">
+            <i class="fa-brands fa-python"></i>
+            <h2>Python development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam eligendi fuga ducimus non, velit illum eius magnam, vero quisquam assumenda. Dolor cumque numquam eligendi nesciunt? Dolorem nesciunt facere odit!</p>
+            <a href="#" class="btn">Readmore</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>       
+       *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+        }
+
+        :root{
+            --text-color:#fff;
+            --first-bg-color:#191f36;
+            --second-bg-color:#262b40;
+            --btn-color:#59b2f4;
+        }
+        .header{
+            display:flex;
+            justify-content:space-between;
+            min-width:100vw;
+            background-color:var(--first-bg-color);
+            padding:1rem 9%;
+            border:2px solid white;
+            position:fixed;
+        }
+        .header a{
+            color:#fff;
+        }
+        .logo{
+            font-weight:800;
+            font-size:1.6rem;
+        }
+        .navbar a{
+            font-weight:800;
+            font-size:1rem;
+        }
+        .about{
+            padding:15rem;
+            background-color:var(--first-bg-color) ;
+            color:var(--text-color);
+            display:flex;
+        }
+        .img img{
+            border-radius:1rem;
+            border:2px var(--btn-color)solid;
+            padding:3px;
+            width:230px;
+            height:230px;
+        }
+        .me{
+            margin-left:10rem;
+            text-align:left;
+        }
+        .me h2{
+            margin-top:0.4rem;
+            font-weight:800;
+            font-size:2rem;
+        }
+        .me h2 span{
+            color:var(--btn-color);
+        }
+        .me h3{
+            margin-top:0.3rem;
+            font-size:100;
+            font-style:none;
+
+        }
+        .me p{
+            margin-top: 0.5rem;
+            line-height:1.3rem;
+            margin-bottom:2rem;
+        }
+        .btn{
+            margin-top: 5rem;
+            background-color:var(--btn-color);
+            padding:0.7rem 2rem;
+            border-radius:3rem;
+            box-shadow:0 0 2rem var(--btn-color);
+            font-weight:600;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">portfolio</a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="skills.html">My skills</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+        </header>
+        <section class="about">
+            <div class="img">
+                <img src="image3.jpeg">
+
+            </div>
+            <div class ="me">
+                <h2>About <span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>I am MCA graduate (2025) with a strong foundation in programming and web development.
+                     I have skills in Python, HTML, CSS, and SQL, which help me build efficient and user-friendly
+                      applications. </p>
+                <a href="" class="btn">Readmore</a>
+            </div>
+        </section>
+        
+    </body>
+    </html>

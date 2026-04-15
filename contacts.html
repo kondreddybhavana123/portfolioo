@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+        text-decoration: none;
+        
+    }
+    :root{
+        --text-color:#fff;
+        --first-bg-color:#191f36;
+        --second-bg-color:#262b40;
+        --btn-color:#59b2f4;
+    }
+    .header {
+        display:flex;
+        justify-content: space-between;
+        min-width:100vw;
+        background-color:var(--first-bg-color);
+        padding:1rem 9%;
+        border:2px solid white;
+        position:fixed;
+        
+    }
+    .header a{
+        color: #fff;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+    .navbar a{
+        font-weight: 700;
+        font-size: 1rem; 
+    }
+    .contact{
+        padding:10rem;
+        background-color: var(--first-bg-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 auto;
+    }
+    .con h1 span{
+        color: var(--btn-color);
+    }
+    .con{
+        margin-bottom: 2rem;
+    }
+    form {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    }
+    .iform input{
+        color: var(--text-color);
+        border:none;
+        row-gap: 120px;
+        column-gap: 120px;
+        margin-left:0.2rem;
+        margin-bottom:0.7rem;
+        background-color: #1e3a5f;
+        flex-basis: 1;
+        flex-grow:1;
+        border-radius: 7px;
+    }
+    .iform {
+        display: flex;
+        height:40px;    
+    }
+    textarea {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #1e3a5f;
+        color: #fff;
+        font-size: 16px;
+        height: 150px;
+        margin-bottom:0.8rem;
+    }
+
+    button {
+        display:flex;
+        align-items: center;
+        margin:0 auto;
+        padding: 10px 30px;
+        background-color:var(--btn-color);
+        border-radius:3rem;
+        color: #0a192f;
+        font-size: 18px;
+        box-shadow: 0 0 10px navy;
+    }
+</style>
+</head>
+<body>
+    <body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">MySkills</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="con">
+            <h1>Contact <span>Me</span></h1>
+        </div>
+       
+        <form>
+            <div class="iform">
+                <input type="text" placeholder="enter your Name"><br>
+                <input type="text" placeholder="enter your Email">
+            </div>
+            <div class="iform">
+                <input type="text" placeholder="enter your Mobile">
+                <input type="text" placeholder="enter your username">
+            </div>
+                 <textarea rows="10" cols="44" placeholder="Your Message"></textarea>
+                 <button type="Submit">Send Messages</button>
+        </form>
+        
+    </section>
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>

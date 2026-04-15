@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+        text-decoration: none;
+        
+    }
+    :root{
+        --text-color:#fff;
+        --first-bg-color:#191f36;
+        --second-bg-color:#262b40;
+        --btn-color:#59b2f4;
+    }
+    .header {
+        display:flex;
+        justify-content: space-between;
+        min-width:100vw;
+        background-color:var(--first-bg-color);
+        padding:1rem 9%;
+        border:2px solid white;
+        position:fixed;
+        
+    }
+    .header a{
+        color: #fff;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+    .navbar a{
+        font-weight: 700;
+        font-size: 1rem; 
+    }
+    .skills{
+        padding-top: 8rem;
+        text-align: center;
+        color:var(--text-color);
+        background-color: var(--first-bg-color);
+        min-height: 100vh;
+    }
+    .skills h1{
+        margin-bottom: 3rem;
+    }
+    .skills-content{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        width:80%;
+        gap:6rem;
+        margin:auto;
+    }
+    .bars{
+        margin-bottom: 2rem;
+        position: relative;
+    }
+    .bars h3{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+        text-align: left;
+    }
+    .bars span{
+        float:right;
+        margin-top: -1.2rem;
+        color: var(--btn-color);
+    }
+    .light-bar{
+        background-color: var(--text-color);
+        height:0.5rem;
+        border-radius: 0.5rem;
+        margin-top:0.5rem;
+    }
+    .btn-bar{
+        background-color: var(--btn-color);
+        height:0.5rem;
+        border-radius: 0.5rem;
+        margin-top: -0.5rem;
+    }
+    .Python{
+        width:90%;
+    }
+    .Django{
+        width:80%;
+    }
+    .SQL{
+        width:95%;
+    }
+    .c{
+        width:90%;
+    }
+    .HTML{
+        width:95%;
+    }
+    .CSS{
+        width:85%;
+    }
+    .Js{
+        width:80%;
+    }
+    .tailwindcss{
+        width:60%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">My Skills</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+    <section class="skills">
+    <h1>My Skills</h1>
+    <div class="skills-content">
+        <div>
+            <div class="bars">
+                <h3>Python</h3>
+                <span>90%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar Python"></div>
+            </div>
+            <div class="bars">
+                <h3>Django</h3>
+                <span>80%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar Django"></div>
+            </div>
+            <div class="bars">
+                <h3>SQL</h3>
+                <span>95%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar SQL"></div>
+            </div>
+            <div class="bars">
+                <h3>C</h3>
+                <span>90%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar c"></div>
+            </div>
+        </div>
+        <div>
+            <div class="bars">
+                <h3>HTML</h3>
+                <span>95%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar HTML"></div>
+            </div>
+            <div class="bars">
+                <h3>CSS</h3>
+                <span>85%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar CSS"></div>
+            </div>
+            <div class="bars">
+                <h3>CSS</h3>
+                <span>80%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar Js"></div>
+            </div>
+            <div class="bars">
+                <h3>tailwindcss</h3>
+                <span>60%</span>
+                <div class="light-bar"></div>
+                <div class="btn-bar tailwindcss"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
